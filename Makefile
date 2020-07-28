@@ -1,4 +1,5 @@
 NAME=alphachai/isort:devel
+DOCKER_FILE=Dockerfile
 CMD=run -it --rm --mount type=bind,src=$$(pwd),dst=/app $(NAME)
 
 -include $(shell [ -e .build-harness ] || curl -sSL -o .build-harness "https://git.io/mintel-build-harness"; echo .build-harness)
